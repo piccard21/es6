@@ -21,7 +21,7 @@ var TaskCollection = function () {
   _createClass(TaskCollection, [{
     key: 'dump',
     value: function dump() {
-      console.log(this.task);
+      console.log(this.tasks);
     }
   }]);
 
