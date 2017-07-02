@@ -8,6 +8,7 @@ var templateES6 = '\n  <div class="alert">,\n    <span>whatever</span>,\n  </div
 
 console.log(templateES6);
 
+// ziemlich cool für VueJS templates
 var name = 'Foo';
 var templateES6_templateStrings = ('\n  <div class="alert">,\n    <span>' + name + '</span>,\n  </div>').trim();
 
