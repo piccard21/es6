@@ -13,6 +13,7 @@ function getPerson() {
   };
 }
 
+// wie extract() in PHP
 function getPersonES6() {
   var name = 'John';
   var age = 25;
