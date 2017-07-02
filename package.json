@@ -1,9 +1,33 @@
 {
-  "devDependencies": {
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.5.2"
   },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.5.2",
+    "buble": "^0.15.2",
+    "buble-loader": "^0.4.1",
+    "webpack": "^3.0.0"
+  },
   "scripts": {
-    "build": "babel src -d output"
-  }
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piccard21/es6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piccard21/es6/issues"
+  },
+  "homepage": "https://github.com/piccard21/es6#readme"
 }

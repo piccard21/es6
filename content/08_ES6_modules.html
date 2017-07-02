@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ES6</title>
+</head>
+
+<body>
+
+  <h1>ES6 Modules</h1>
+
+  <script src="../output/08_ES6_modules.js"></script>
+
+
+  <h2>Wepack um Module importieren zu können</h2>
+  <code>
+    <pre>
+      npm install webpack --save-dev
+
+      webpack src/08_ES6_modules.js output/08_ES6_modules.js
+    </pre>
+  </code> oder via <strong>webpack.config.js</strong>
+
+  <code>
+    <pre>
+      var webpack = require('webpack');
+
+      module.exports = {
+        entry: './src/08_ES6_modules.js',
+        output: {
+          filename: './output/08_ES6_modules.js'
+        }
+      }
+    </pre>
+
+    und nur <strong>webpack</strong> ausführen
+  </code> jetzt wird aber nicht in ECMA6 konvertiert, darum nutzen wir den babel-loader
+
+  <code>
+      <pre>
+        npm install babel-loader --save-dev
+      </pre>
+    </code> und in <strong>webpack.config.js</strong>
+
+  <code>
+      <pre>
+      module: {
+        rules: [{
+          test: /\.js$/,
+          exclude: /(node_modules|bower_components)/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['env']
+            }
+          }
+        }]
+      }
+      </pre>
+    </code>
+</body>
+
+</html>
