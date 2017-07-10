@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ES6</title>
+</head>
+
+<body>
+
+  <h1>Genrators</h1>
+  <p>Pausiere zu einem bestimmten Zeitpunkt (yield) und greife ihn später wieder auf</p>
+
+  <h2>Workaround: Aufsetzen</h2>
+  <code>npm install babel-polyfill --save</code><br>
+  <code>npm install babel-plugin-transform-regenerator --save-dev</code><br>
+  <p>Das sollte importiert werden, wenn webpack.config steht</p>
+  <code><pre>
+    script src="../node_modules/babel-polyfill/browser.js"
+  </pre></code>
+
+  <h2>Example</h2>
+  <code>
+    <pre>function *numbers(){
+    yield 1;
+    yield 2;
+    yield 3;
+  }
+    <pre></code>
+  <script src="../node_modules/babel-polyfill/browser.js"></script>
+  <script src="../output/11_generators.js"></script>
+
+</body>
+
+</html>
