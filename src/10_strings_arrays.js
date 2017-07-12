@@ -71,3 +71,11 @@ console.log(users.find(user => user.isAdmin).name)
 
 // findIndex
 console.log([1, 2, 3, 4, 5, 6, 7, 8, 9].findIndex(item => item > 5));
+
+
+// entries - returns Iteratoren
+//
+let items = ['aaa', 'bbb', 'ccc'].entries();
+for (let i of items) {
+  console.log('for of', i);
+} 
